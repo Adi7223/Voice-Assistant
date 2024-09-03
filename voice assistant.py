@@ -12,7 +12,7 @@ def load_data(filename):
         data = json.load(json_file)
     return data
 
-data = load_data('C:\\Users\\Aditya\\Desktop\\Study\\prog\\Voice assistant\\data.json')
+data = load_data('path name')
 
 def takecommand():
  print("Listening....")
