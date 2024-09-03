@@ -1,7 +1,6 @@
 import pyttsx3
 import speech_recognition as sr
 import webbrowser
-# import openai
 import os
 import json
 
@@ -14,39 +13,6 @@ def load_data(filename):
     return data
 
 data = load_data('C:\\Users\\Aditya\\Desktop\\Study\\prog\\Voice assistant\\data.json')
-
-# def ai(prompt):
-#  openai.api_key = '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'
-
-# #  client = OpenAI()
-#  response = openai.ChatCompletion.create(
-#    model="gpt-3.5-turbo",
-#    messages=[
-#      {
-#        "role": "user",
-#         "content": prompt
-# #           [
-# # #       #    {
-# # #       #      "type": "text",
-# # #       #      "text": "write an email for delayed project submission\n"
-# # #       #    }
-# # #        ]
-#      }
-#    ],
-#    temperature=1,
-#    max_tokens=50,
-#    top_p=1,
-#    frequency_penalty=0,
-#    presence_penalty=0,
-    
-#  )
-
-#  reply = response['choices'][0]['message']['content']
-#  return reply
- 
-
-# def say(text):
-#  engine.say(text)
 
 def takecommand():
  print("Listening....")
@@ -104,8 +70,5 @@ if __name__=='__main__':
                 engine.runAndWait()
                 break
   
-#   if "open AI".lower() in query.lower():
-#    response = ai(prompt=query)
-#    engine.say(response)
-#    engine.runAndWait()
+
    
